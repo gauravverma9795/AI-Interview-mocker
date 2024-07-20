@@ -21,7 +21,7 @@ export default function Home() {
         <Header/>
 
     <div className="flex justify-center items-center  relative  ">
-        <img className="h-screen w-auto object-cover" src="/frontImg.jpg"/>
+        <img className="h-screen w-screen object-cover" src="/frontImg.jpg"/>
 
         <div className=" absolute flex flex-col  justify-center items-center">
       
