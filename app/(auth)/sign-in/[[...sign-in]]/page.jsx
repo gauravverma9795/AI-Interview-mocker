@@ -29,11 +29,11 @@ export default function Page() {
           </svg>
         </a>
 
-        <h2 class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+        <h2 class="mt-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
           Welcome to AI Interview Mocker 🦑
         </h2>
 
-        <p class="mt-4 font-bold leading-relaxed text-white/90">
+        <p class="mt-4 font-bold leading-relaxed text-black">
         Developed an AI-powered interview simulation platform designed to help candidates prepare for job interviews.
         </p>
       </div>
