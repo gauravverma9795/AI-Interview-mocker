@@ -1,11 +1,42 @@
+"use client"
+
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Header from "./dashboard/_components/Header";
+
 
 export default function Home() {
+
+  const router=useRouter();
+  const MoveInInterview=()=>{
+
+    router.push('/dashboard');
+  }
   return (
-    <div>
-    <h1>hii gaurav</h1>
-    <Button>subscribe</Button>
+    
+<div >
+
+        <Header/>
+
+    <div className="flex justify-center items-center  relative  ">
+        <img className="h-screen w-auto object-cover" src="/frontImg.jpg"/>
+
+        <div className=" absolute flex flex-col  justify-center items-center">
+      
+        <h1 className="font-bold text-3xl text-green-400 flex justify-center my-10">Your Personal Al Interview Coach</h1>
+        <Button  className="flex justify-center " onClick={MoveInInterview}>Get Start</Button>
+
+        <p class="mt-4 font-bold leading-relaxed text-black">
+          Developed an AI-powered interview simulation platform designed to help candidates prepare for job interviews.
+          </p>
+
+        </div>
+
+        
+
     </div>
+</div>
   );
 }

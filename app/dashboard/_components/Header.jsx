@@ -2,10 +2,16 @@
 
 import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
 function Header() {
+
+  const router=useRouter();
+
+  const MoveInDeshboard=()=>{
+    router.push('/dashboard');
+  }
     const path=usePathname();
     useEffect(()=>{
 
@@ -17,13 +23,11 @@ function Header() {
        <Image src={'/logo.svg'} width={160} height={100} alt='logo'/>
        <ul className='hidden md:flex gap-6  '>
 
-       <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer
+       <li onClick={MoveInDeshboard} className={`hover:text-primary hover:font-bold transition-all cursor-pointer
 
        ${path=='/dashboard'&&'text-primary font-bold'}
        
         `}
-       
-       
        >Dashboard</li>
        <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer
 
