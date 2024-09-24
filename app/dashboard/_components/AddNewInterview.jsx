@@ -23,13 +23,6 @@ import { useRouter } from 'next/navigation';
 
 import { chatSession } from '@/utils/GeminiAIModel';
 
-
-
-
-
-
-
-
 function AddNewInterview() {
 
   const[openDialog,setOpenDialog]=useState(false);

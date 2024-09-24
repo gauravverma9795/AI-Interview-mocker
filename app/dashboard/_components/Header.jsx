@@ -12,6 +12,15 @@ function Header() {
   const MoveInDeshboard=()=>{
     router.push('/dashboard');
   }
+
+  const MoveInUpgrade=()=>{
+    router.push('/dashboard/upgrade');
+  }
+
+  const MoveInQuestions=()=>{
+    router.push('/dashboard/questions');
+  }
+  
     const path=usePathname();
     useEffect(()=>{
 
@@ -29,12 +38,12 @@ function Header() {
        
         `}
        >Dashboard</li>
-       <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer
+       <li onClick={MoveInQuestions}  className={`hover:text-primary hover:font-bold transition-all cursor-pointer
 
 ${path=='/dashboard/questions'&&'text-primary font-bold'}
 
  `}>Questions</li>
-       <li className={`hover:text-primary hover:font-bold transition-all cursor-pointer
+       <li onClick={MoveInUpgrade} className={`hover:text-primary hover:font-bold transition-all cursor-pointer
 
 ${path=='/dashboard/upgrade'&&'text-primary font-bold'}
 
