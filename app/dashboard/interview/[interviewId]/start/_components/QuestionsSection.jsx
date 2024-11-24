@@ -42,4 +42,4 @@ function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
   )
 }
 
-export default QuestionsSection
+export default QuestionsSection;
