@@ -34,10 +34,10 @@
 //     generationConfig,
 //  // safetySettings: Adjust safety settings
 //  // See https://ai.google.dev/gemini-api/docs/safety-settings
-   
+
 //   });
 
-  
+
 
 /*
  * Install the Generative AI SDK
@@ -94,8 +94,19 @@
 //     generationConfig,
 //     safetySetting,
 //  // See https://ai.google.dev/gemini-api/docs/safety-settings
-  
+
 //   });
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+>>>>>>> b346860ef70b694fc5b544cb63eef7a82966f048
 // new code
 
 

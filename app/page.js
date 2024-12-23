@@ -7,21 +7,21 @@ import Header from "./dashboard/_components/Header";
 
 export default function Home() {
 
-  const router=useRouter();
-  const MoveInInterview=()=>{
+  const router = useRouter();
+  const MoveInInterview = () => {
 
     router.push('/dashboard');
   }
-  
+
   return (
-    
-<div className="overflow-hidden h-screen">
+
+    <div className="overflow-hidden h-screen">
 
 
-        <Header/>
-        
+      <Header />
 
-    {/* <div className="flex justify-center items-center  relative  ">
+
+      {/* <div className="flex justify-center items-center  relative  ">
         <img className="h-screen w-screen object-cover" src="/frontImg.jpg"/>
 
         <div className=" absolute flex flex-col  justify-center items-center">
@@ -39,22 +39,32 @@ export default function Home() {
 
     </div> */}
 
-    <div className="flex relative  ">
-        <img className="h-screen w-screen object-cover" src="/frontImg.jpg"/>
+      <div className="flex relative  ">
+        <img className="h-screen w-screen object-cover" src="/frontImg.jpg" />
 
         <div className="  absolute  ">
-      
-        <h1 className="px-5 font-bold italic text-5xl  text-red-900 flex justify-center my-10">Your Personal Al Interview Coach</h1>
 
-        <div className="px-5 flex justify-center">
-        <Button   className="p-5 font-bold italic bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-300 hover-grow active-shrink" onClick={MoveInInterview}>Let's Start</Button>
-        </div>
-  
+          <h1 className="px-5 font-bold italic text-5xl  text-red-900 flex justify-center my-10">Your Personal Al Interview Coach</h1>
+
+          <div className="px-5 flex justify-center">
+            <Button className="p-5 font-bold italic bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-300 hover-grow active-shrink" onClick={MoveInInterview}>Let's Start</Button>
           </div>
-        
+
+        </div>
+
+
+      </div>
+
+
+
+
+
 
     </div>
+<<<<<<< HEAD
 
 </div>
+=======
+>>>>>>> b346860ef70b694fc5b544cb63eef7a82966f048
   );
 }
