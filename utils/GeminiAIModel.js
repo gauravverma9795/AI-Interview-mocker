@@ -96,14 +96,6 @@
 //  // See https://ai.google.dev/gemini-api/docs/safety-settings
   
 //   });
-
- 
-
-
-
-
-
-
 // new code
 
 
@@ -147,7 +139,6 @@ const safetySetting = [
     threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
   },
 ];
-
 export const chatSession = model.startChat({
   generationConfig,
   safetySetting,
