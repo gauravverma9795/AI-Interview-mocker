@@ -37,13 +37,7 @@ function AddNewInterview() {
   const onSubmit = async (event) => {
     setLoading(true);
     event.preventDefault();
-<<<<<<< HEAD
-    console.log(jobPosition,jobDesc,jobExperience);
-    
-    const InputPrompt="Job Position: "+jobPosition+", Job Description: "+jobDesc+" , Years of Experience : "+jobExperience+" , Depends on Job Position , Job Description & Years of Experience give us "+process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT+" Interview question along with Answer in JSON format , Give us question and answer field on JSON";
-=======
     console.log(jobPosition, jobDesc, jobExperience);
->>>>>>> b346860ef70b694fc5b544cb63eef7a82966f048
 
     const InputPrompt = "Job Position:" + jobPosition + ", Job Description: " + jobDesc + " , Years of Experience : " + jobExperience + " , Depends on Job Position , Job Description & Years of Experience give us " + process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT + " Interview question along with Answer in JSON format , Give us question and answer field on JSON";
 
